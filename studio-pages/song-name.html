@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Home</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Avenir Next font -->
+  <style type="text/css">
+    @import url("https://fast.fonts.net/lt/1.css?apiType=css&c=6d67bbe0-1ca1-4fb4-97e4-44351c947923&fontids=6149639,6149649,6149662");
+    @font-face{
+        font-family:"Avenir Next LT W05 Demi";
+        src:url("../Fonts/6149639/11ba579d-59f5-479e-b2dd-411ca230f60c.woff2") format("woff2"),url("../Fonts/6149639/f740c173-ce1a-4e47-a4e3-fab0a45da815.woff") format("woff");
+    }
+    @font-face{
+        font-family:"Avenir Next LT W05 Bold";
+        src:url("../Fonts/6149649/54a73ecc-af4b-4a5d-bc62-308e0fb53d83.woff2") format("woff2"),url("../Fonts/6149649/1cc134d7-e443-4d5b-887d-09e2af0aa119.woff") format("woff");
+    }
+    @font-face{
+        font-family:"Avenir Next LT W05 Regular";
+        src:url("../Fonts/6149662/146f526d-792d-4257-ba12-0fb6fbb8e31e.woff2") format("woff2"),url("../Fonts/6149662/2a1d06fe-73d7-4df1-9d59-5227c3c01d03.woff") format("woff");
+    }
+  </style> 
+  
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <!-- <link href="../assets/css/style.css" rel="stylesheet"> -->
+  <link href="../assets/css/custom-style.css" rel="stylesheet">
+
+  <style>
+    .show {display: block;}
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <a href="home.html" class="logo mr-auto"><img src="../assets/studio-images/StudioPop Logo/logo-icon-white@2x.png" alt="" class="img-fluid"></a>
+
+      <nav class="main-nav d-none d-lg-block">
+        <ul>
+          <li>
+            <input class="search-icon" type="text" id="myInput" placeholder="Search for names.." title="Type in a name">
+          </li>
+          <li><a href="discover.html">Discover</a></li>
+          <li class="active"><a href="home.html">Home</a></li>
+          <li><img src="../assets/studio-images/AdobeStock_177950590.png" alt="Icon" onclick="Menu()" class="dropdown-img img-fluid"></li>
+        </ul>
+      </nav><!-- .main-nav-->
+
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <div id="myDropdown" class="dropdown-content">
+    <h5>Menu</h5>
+    <a href="#acc_pro" role="tab" data-toggle="tab">Account & profile</a>
+    <a href="#pay_out" role="tab" data-toggle="tab">Payment & payout</a>
+    <a href="#setting" role="tab" data-toggle="tab">Settings</a>
+    <a href="#help_faq" role="tab" data-toggle="tab">Help & FAQ</a>
+    <a href="Release-intro.html">Release a song</a>
+    <a href="contact-1.html">Contact us</a>
+    <a href="about.html">Log out</a>
+  </div>
+
+  <div id="audio_open_id" class="audioopen">
+    <audio controls >
+      <source src="horse.ogg" type="audio/ogg">
+      <source src="horse.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+  
+  <!-- Change Password MODAL START style="top: 240px;"-->
+  <div  class="modal fade change-password-modal" id="changePassowrdModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="signup-modal modal-content">
+        
+        <div class="modal-body">
+          <p style="text-align: center;">
+            <img style="width: 35px;height: auto;" src="../assets/studio-images/lock.png" alt="">
+          </p>
+          <h3>Change password</h3>
+          <p>Old password</p>
+          <input type="password" placeholder="">
+          <p>New password</p>
+          <input type="password" placeholder="">
+          <p>Confirm password</p>
+          <input type="password" placeholder="">
+
+          <div class="">
+            <a class="confirm-button">Confirm</a>
+            <a data-dismiss="modal" class="cancel-button">Cancel</a>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Change Password MODAL END -->
+
+  
+  <!-- Add Payment Method MODAL START style="top: 240px;"-->
+  <div  class="modal fade payment-method-modal" id="AddPaymentMethodModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="border-radius: 20px;">
+        
+        <div class="modal-body">
+          <h3>Add payment method</h3>
+          <p>First name</p>
+          <input class="half-50-width" type="text" placeholder="Ryan">
+          <p>Card info</p>
+          <input style="margin-bottom: -1px;" type="text" placeholder="Card number">
+          <input class="pay-method-custom-field" type="text" placeholder="Expiration">
+          <input class="pay-method-custom-field1" type="text" placeholder="CVV">
+          
+          <div class="row">
+            <div class="col-md-4">
+              <p>Billing info</p>
+              <input type="text" placeholder="Zip code">
+            </div>
+            <div class="col-md-8">
+              <p style="margin: 2px 0px 2px 0px;">Country/region</p>
+              <select class="country-select">
+                <option>Spain</option>
+                <option>India</option>
+                <option>America</option>
+              </select>
+            </div>
+          </div>
+          
+          <div style="margin: 5px 0px;">
+            <a style="padding: 10px 85px;" class="confirm-button">Done</a>
+            <a style="padding: 10px 85px;" data-dismiss="modal" class="cancel-button">Cancel</a>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Add Payment Method MODAL END -->
+
+  <!-- Purchase Song Shares MODAL START style="top: 240px;"-->
+  <div  class="modal fade edit-song-modal purchase-song-shares-modal " id="PurchaseSongSharesModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="border-radius: 20px;width: 580px;">
+        <div class="modal-body">
+          <p class="back-button"><</p>
+          <div style="padding:5px 20px;">
+            <h3>Purchase song shares</h3>
+
+            <div class="row">
+              <div class="col-md-2">
+                <img style="width: 100%;" src="../assets/studio-images/blank.png">
+              </div>
+              <div class="col-md-10">
+                <p class="head-txt">Song Name</p>
+                <p style="margin:0px;" class="txt-song-detail">Release: XX XXX XXXX</p>
+              </div>
+            </div>
+
+            <div class="row" style="margin:20px 0px;">
+              <div class="col-md-2">
+                <img style="width: 50%;" src="../assets/studio-images/AdobeStock_177950590.png">
+              </div>
+              <div class="col-md-5">
+                <p class="margin-left">Artist Name</p>
+              </div>
+            </div>
+
+            <div class="row top-bottom-line">
+              <div class="col-md-8">
+                <p class="left-head-txt">Available</p>
+              </div>
+              <div class="col-md-4">
+                <p class="head-txt">X.XX%</p>
+              </div>
+            </div>
+
+            <div class="row top-bottom-line">
+              <div class="col-md-8">
+                <p class="left-head-txt">Price for 1%</p>
+              </div>
+              <div class="col-md-4">
+                <p class="head-txt">XX.XX€</p>
+              </div>
+            </div>
+
+            <div style="border-bottom: 1px solid #D3D3D3;" class="row top-bottom-line">
+              <div class="col-md-8">
+                <p class="left-head-txt">Expiry Date</p>
+              </div>
+              <div class="col-md-4">
+                <p class="head-txt">XX XXX XXXX</p>
+              </div>
+            </div>
+
+
+            <p class="left-head-txt">What percentage of stream revenue would you like to buy?</p>
+            <div class="row">
+              <div class="col-md-3">
+                <input style="width: 85%;" type="text" placeholder="XX"><span style="font-size:12px;">%</span> 
+              </div>
+              <div class="col-md-5">
+                <progress id="file" value="32" max="100"> 32% </progress>
+              </div>
+              <div class="col-md-3">
+                <p class="head-txt">Max. 55%</p>
+              </div>
+            </div>
+
+            <p class="left-head-txt">Estimated return per million streams ≈ XX.XX€</p>
+            <p class="head-txt">Total: XXX.XX€</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="separate-modals">
+        <h3 style="margin-bottom:0px;">Payment method</h3>
+        <p class="left-head-txt">Your outstanding balance of XXX.XX€ will be sent to your chosen payout method. Please allow up to three working days for your money to arrive.</p>
+        <div class="row" style="margin:10px 0px;">
+          <div class="col-md-10">
+            <p class="paypal_box">PayPal</p>
+            <h6 class="pay-txt">PayPal</h6>
+            <p class="pay-email">xxxxx@xxxxx.com</p>
+          </div>
+          <div class="col-md-2">
+            <input type="radio" id="male" name="gender" value="male">
+          </div>
+        </div>
+        <div class="row" style="margin:10px 0px;">
+          <div class="col-md-10">
+            <p class="paypal_box">PayPal</p>
+            <h6 class="pay-txt">Card ended in</h6>
+            <p class="pay-email">xxxx</p>
+          </div>
+          <div class="col-md-2">
+            <input type="radio" id="male" name="gender" value="male">
+          </div>
+        </div>
+        <div style="margin:10px 0px 0px 0px;">
+          <button class="yellow-button">
+            <a href="#">Confirm</a>
+          </button>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <!-- edit Song MODAL END -->
+
+  <!-- cancel MODAL START style="top: 240px;"-->
+  <div  class="modal fade payout-confirmation-modal" id="cancelModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="border-radius: 20px;">
+       
+        <div class="modal-body">
+          <button type="button" class="modal-close" data-dismiss="modal">×</button>
+          <h3> Cancel release?</h3>
+          <p class="pop-subhead">Cancelling is available until the release date, and any investors will receive a refund.</p>
+          
+          <div style="margin:0px 0px 10px 0px;">
+            <a data-dismiss="modal" class="cancel-button-modal">Confirm cancellation</a>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- cancel MODAL END -->
+
+  <main id="main">
+
+  <!-- ======= section start ======= -->
+  <section class="top-margin">
+    <div class="container">
+      <div class="row  main-contain">
+        <div class="col-md-12">
+          <p><a style="color: #091124;" href="discover.html">Discover</a>  > <span class="page_heading_link">Song Name</span></p>
+        </div>
+      </div>
+      <!-- Images box -->
+      <div class="row song-name-img">
+        <div class="col-md-4">
+          <img src="../assets/studio-images/product2.png" width="100%">
+        </div>
+        <div class="col-md-4">
+          <img src="../assets/studio-images/product2.png" width="100%">
+        </div>
+        <div class="col-md-4">
+          <img src="../assets/studio-images/product2.png" width="100%">
+        </div>
+      </div>
+
+      <!-- middle section -->
+      <div class="row margin-top">
+        <div class="col-md-3">
+          <span class="overlay">
+            <img src="../assets/studio-images/product2.png" class="play-img">
+            <i onclick="Audio_play()" class="fa fa-play play-icon-img"></i>
+          </span>
+        </div>
+        <div class="col-md-6 custom-padding">
+          <h4 class="share_pg_heading"> UN DIA (one dya) (Feat.Tainy)</h4>
+          <p class="paregrap_text paragra_text">Release: 5 Jan 2020 </p>
+          <div class="user_profile">
+            <div class="user_profile_img">
+              <img class="img-circle" src="../assets/studio-images/product5@2x.png">
+            </div>
+            <div class="user_profile_name">
+              <p class="user_name paregrap_text">David Miller Sam Curren</p>
+            </div>
+            <div>
+              <p style="margin: 0px 0px 10px 80px;" class="paregrap_text">
+                You own 55%.
+                <a data-toggle="modal" data-target="#InvestorModal" href="#">You Have 16 investors.</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 custom-card-padding">
+          <div class="Song_detail_card">
+            <div class="Song_detail_card_body">
+              <p class="Song_detail_card_text sg_pg_sp">10% avalable</p>
+              <p class=" paregrap_text sg_pg_sp">X<i class="fa fa-eur"></i> for 1%</p>
+              <p class=" paregrap_text sg_pg_sp">Shares expire 1 Jan 2022</p>
+              <button data-toggle="modal" data-target="#PurchaseSongSharesModal" class="Song_detail_card_btn">Get Your share </button>  
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Third row start -->
+      <div class="row">
+        <div class="col-md-8">
+          <h6  class="share_pg_heading"> About this sale</h6>
+          <p class="paregrap_text paragra_text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+        </div>
+    
+        <div class="col-md-8">
+          <h6  class="share_pg_heading"> About Artist Name</h6>
+          <p class="paregrap_text paragra_text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- End section -->
+
+  </main>
+  <!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="section-bg">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="footer-info">
+                  <a href="home.html"><img src="../assets/studio-images/StudioPop Logo/logo-white.png" alt="Logo" style="width: 50%;"></a>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="footer-links">
+                  <h4>Useful Links</h4>
+                  <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#about">FAQ</a></li>
+                    <li><a href="#">About StudioPop®</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div style="margin-top: 10px;" class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row bottom-bar">
+          <div class="col-lg-6">
+            <ul style="padding: 0px;" >
+              <li>Legal</li>
+              <li>Privacy Policy</li>
+              <li>Cookies</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <p>© 2020 StudioPop, Ltd. All Rights Reserved.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/counterup/counterup.min.js"></script>
+  <script src="../assets/vendor/venobox/venobox.min.js"></script>
+  <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+  <script>
+ 
+    $("ul li").click(function()
+      {
+      $("ul .active").removeClass("active");
+      $(this).addClass("active");
+    });
+
+    $(document).ready(function () {
+        $('#acc_pro').removeClass("active");
+        $('#acc_pro').addClass("active");
+    });
+
+    function Menu() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    function Audio_play(){
+      document.getElementById("audio_open_id").classList.toggle("show");
+    }
+
+    $(function() {
+        $(document).on("change",".uploadFile", function()
+        {
+            var uploadFile = $(this);
+            var files = !!this.files ? this.files : [];
+            if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
+    
+            if (/^image/.test( files[0].type)){ // only image file
+                var reader = new FileReader(); // instance of the FileReader
+                reader.readAsDataURL(files[0]); // read the local file
+    
+                reader.onloadend = function(){ // set image data as background of div
+                    //alert(uploadFile.closest(".upimage").find('.imagePreview').length);
+                uploadFile.closest(".imgUp").find('.imagePreview').css("background-image", "url("+this.result+")");
+                }
+            }
+          
+        });
+    });
+
+  </script>
+
+</body>
+
+</html>

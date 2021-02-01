@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Home</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Avenir Next font -->
+  <style type="text/css">
+    @import url("https://fast.fonts.net/lt/1.css?apiType=css&c=6d67bbe0-1ca1-4fb4-97e4-44351c947923&fontids=6149639,6149649,6149662");
+    @font-face{
+        font-family:"Avenir Next LT W05 Demi";
+        src:url("../Fonts/6149639/11ba579d-59f5-479e-b2dd-411ca230f60c.woff2") format("woff2"),url("../Fonts/6149639/f740c173-ce1a-4e47-a4e3-fab0a45da815.woff") format("woff");
+    }
+    @font-face{
+        font-family:"Avenir Next LT W05 Bold";
+        src:url("../Fonts/6149649/54a73ecc-af4b-4a5d-bc62-308e0fb53d83.woff2") format("woff2"),url("../Fonts/6149649/1cc134d7-e443-4d5b-887d-09e2af0aa119.woff") format("woff");
+    }
+    @font-face{
+        font-family:"Avenir Next LT W05 Regular";
+        src:url("../Fonts/6149662/146f526d-792d-4257-ba12-0fb6fbb8e31e.woff2") format("woff2"),url("../Fonts/6149662/2a1d06fe-73d7-4df1-9d59-5227c3c01d03.woff") format("woff");
+    }
+  </style> 
+  
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <!-- <link href="../assets/css/style.css" rel="stylesheet"> -->
+  <link href="../assets/css/custom-style.css" rel="stylesheet">
+
+  <style>
+    .show {display: block;}
+
+    .home_release_btn {
+   
+    color:  #1bb1dc;
+    font-size: 12px;
+    border-radius: 20px;
+    border: 1px solid #1bb1dc;
+   padding: 8px 22px 10px 25px;
+   background: transparent;
+}
+  .home_release_cancel_btn {
+    margin: 70px 0px 0px 0px;
+    font-size: 12px;
+    letter-spacing: -0.26px;
+    color: #D51E41; 
+    text-align: center;
+    font-weight: 400;
+    padding: 8px 40px 10px 40px;
+    background: transparent;
+
+    border: 2px solid #D51E41;
+    border-radius: 27px;
+}
+
+
+.tb_heading th {
+  font-size: 11px;
+}
+.tb_data td {
+ font-size: 11px;
+}
+
+
+.custom-serch-box{
+  background-color:  #ddccff; /* Green */
+  color: black;
+  border-radius:30px;
+  width: 350px !important;
+  position: inherit;
+
+}
+
+.tb_input{
+  width: 55px;
+  font-size: 10px;
+  background-color:  #ddccff;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <a href="home.html" class="logo mr-auto"><img src="../assets/studio-images/StudioPop Logo/logo-icon-white@2x.png" alt="" class="img-fluid"></a>
+
+      <nav class="main-nav d-none d-lg-block">
+        <ul>
+          <li>
+            <input class="search-icon" type="text" id="myInput" placeholder="Search for names.." title="Type in a name">
+          </li>
+          <li><a href="discover.html">Discover</a></li>
+          <li class="active"><a href="home.html">Home</a></li>
+          <li><img src="../assets/studio-images/AdobeStock_177950590.png" alt="Icon" onclick="Menu()" class="dropdown-img img-fluid"></li>
+        </ul>
+      </nav><!-- .main-nav-->
+
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <div id="myDropdown" class="dropdown-content">
+    <h5>Menu</h5>
+    <a href="#acc_pro" role="tab" data-toggle="tab">Account & profile</a>
+    <a href="#pay_out" role="tab" data-toggle="tab">Payment & payout</a>
+    <a href="#setting" role="tab" data-toggle="tab">Settings</a>
+    <a href="#help_faq" role="tab" data-toggle="tab">Help & FAQ</a>
+    <a href="Release-intro.html">Release a song</a>
+    <a href="contact-1.html">Contact us</a>
+    <a href="about.html">Log out</a>
+  </div>
+  
+  <!-- Change Password MODAL START style="top: 240px;"-->
+  <div  class="modal fade change-password-modal" id="changePassowrdModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="signup-modal modal-content">
+        
+        <div class="modal-body">
+          <p style="text-align: center;">
+            <img style="width: 35px;height: auto;" src="../assets/studio-images/lock.png" alt="">
+          </p>
+          <h3>Change password</h3>
+          <p>Old password</p>
+          <input type="password" placeholder="">
+          <p>New password</p>
+          <input type="password" placeholder="">
+          <p>Confirm password</p>
+          <input type="password" placeholder="">
+
+          <div class="">
+            <a class="confirm-button">Confirm</a>
+            <a data-dismiss="modal" class="cancel-button">Cancel</a>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Change Password MODAL END -->
+
+  
+  <!-- Add Payment Method MODAL START style="top: 240px;"-->
+  <div  class="modal fade payment-method-modal" id="AddPaymentMethodModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="border-radius: 20px;">
+        
+        <div class="modal-body">
+          <h3>Add payment method</h3>
+          <p>First name</p>
+          <input class="half-50-width" type="text" placeholder="Ryan">
+          <p>Card info</p>
+          <input style="margin-bottom: -1px;" type="text" placeholder="Card number">
+          <input class="pay-method-custom-field" type="text" placeholder="Expiration">
+          <input class="pay-method-custom-field1" type="text" placeholder="CVV">
+          
+          <div class="row">
+            <div class="col-md-4">
+              <p>Billing info</p>
+              <input type="text" placeholder="Zip code">
+            </div>
+            <div class="col-md-8">
+              <p style="margin: 2px 0px 2px 0px;">Country/region</p>
+              <select class="country-select">
+                <option>Spain</option>
+                <option>India</option>
+                <option>America</option>
+              </select>
+            </div>
+          </div>
+          
+          <div style="margin: 5px 0px;">
+            <a style="padding: 10px 85px;" class="confirm-button">Done</a>
+            <a style="padding: 10px 85px;" data-dismiss="modal" class="cancel-button">Cancel</a>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Add Payment Method MODAL END -->
+
+  <!-- edit Song MODAL START style="top: 240px;"-->
+  <div  class="modal fade edit-song-modal" id="editSongModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="border-radius: 20px;width: 580px;">
+        
+        <div class="modal-body">
+          <p class="back-button"><</p>
+          <div style="padding:5px 20px;">
+
+            <h3>Edit sale</h3>
+            <a class="close-button">Close sale</a>
+            <p class="txt-song-detail">What percentage of stream revenue would you like to sell?</p>
+            
+            <div class="row">
+              <div class="col-md-3">
+                <input style="width: 85%;" type="text" placeholder="XX"><span style="font-size:12px;">%</span> 
+              </div>
+              <div class="col-md-5">
+                <progress id="file" value="32" max="100"> 32% </progress>
+              </div>
+              <div class="col-md-3">
+                <p class="dark-txt">Max. 55%</p>
+              </div>
+            </div>
+
+            <p class="txt-song-detail">How much would you like to charge for 1% of your song’s royalties?</p>
+            <div class="row">
+              <div class="col-md-3">
+                <input type="text" placeholder="XX">
+              </div>
+              <div class="col-md-3">
+                <select name="" id="">
+                  <option value="">EUR</option>
+                  <option value="">INR</option>
+                  <option value="">USD</option>
+                </select>
+              </div>
+              <div class="col-md-5">
+                <p class="dark-txt">TOTAL ≈ XXX.XX EUR</p>
+              </div>
+            </div>
+
+            <p class="txt-song-detail">Expiry date (max 2 years)</p>
+            <div class="row">
+              <div class="col-md-3">
+                <select name="" id="" aria-placeholder="Month"> 
+                  <option value="">Month</option>
+                  <option value="">INR</option>
+                  <option value="">USD</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <select name="" id="" aria-placeholder="Day"> 
+                  <option value="">Day</option>
+                  <option value="">INR</option>
+                  <option value="">USD</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <select name="" id="" aria-placeholder="2020"> 
+                  <option value="">2020</option>
+                  <option value="">INR</option>
+                  <option value="">USD</option>
+                </select>
+              </div>
+            </div>
+
+            <p class="txt-song-detail">Description</p>
+            <textarea name="" id="" cols="65" rows="8" placeholder="Describe your sale. For example, talk about your song, your goals and what you will do with the money raised."></textarea>
+
+            <p class="txt-song-detail">Pictures (min 3, max 6)</p>
+            <div class="row">
+              <div class="col-md-4 img-box">
+                <div class="imgUp">
+                  <div class="imagePreview"></div>
+                  <label class="btn btn-primary">
+                    Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 img-box">
+                <div class="imgUp">
+                  <div class="imagePreview"></div>
+                  <label class="btn btn-primary">
+                    Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 img-box">
+                <div class="imgUp">
+                  <div class="imagePreview"></div>
+                  <label class="btn btn-primary">
+                    Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 img-box">
+                <div class="imgUp">
+                  <div class="imagePreview"></div>
+                  <label class="btn btn-primary">
+                    Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 img-box">
+                <div class="imgUp">
+                  <div class="imagePreview"></div>
+                  <label class="btn btn-primary">
+                    Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 img-box">
+                <div class="imgUp">
+                  <div class="imagePreview"></div>
+                  <label class="btn btn-primary">
+                    Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+                  </label>
+                </div>
+              </div>
+            </div>
+            
+            <div style="margin: 25px 0px 0px 0px;">
+              <a style="padding: 10px 85px;" data-toggle="modal" data-target="#PayoutSendModal" class="confirm-button">Save changes</a>
+              <a style="padding: 10px 85px;" data-dismiss="modal" class="cancel-button">Cancel</a>
+            </div>
+
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- edit Song MODAL END -->
+
+  
+
+  <!-- New Sale MODAL START style="top: 240px;"-->
+  <div  class="modal fade edit-song-modal" id="NewSaleModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="border-radius: 20px;width: 580px;">
+        
+        <div class="modal-body">
+          <p class="back-button"><</p>
+          <div style="padding:5px 20px;">
+
+            <h3>Edit sale</h3>
+            <a class="close-button">New sale</a>
+            <p class="txt-song-detail">What percentage of stream revenue would you like to sell?</p>
+            
+            <div class="row">
+              <div class="col-md-3">
+                <input style="width: 85%;" type="text" placeholder="XX"><span style="font-size:12px;">%</span> 
+              </div>
+              <div class="col-md-5">
+                <progress id="file" value="32" max="100"> 32% </progress>
+              </div>
+              <div class="col-md-3">
+                <p class="dark-txt">Max. 55%</p>
+              </div>
+            </div>
+
+            <p class="txt-song-detail">How much would you like to charge for 1% of your song’s royalties?</p>
+            <div class="row">
+              <div class="col-md-3">
+                <input type="text" placeholder="XX">
+              </div>
+              <div class="col-md-3">
+                <select name="" id="">
+                  <option value="">EUR</option>
+                  <option value="">INR</option>
+                  <option value="">USD</option>
+                </select>
+              </div>
+              <div class="col-md-5">
+                <p class="dark-txt">TOTAL ≈ XXX.XX EUR</p>
+              </div>
+            </div>
+
+            <p class="txt-song-detail">Expiry date (max 2 years)</p>
+            <div class="row">
+              <div class="col-md-3">
+                <select name="" id="" aria-placeholder="Month"> 
+                  <option value="">Month</option>
+                  <option value="">INR</option>
+                  <option value="">USD</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <select name="" id="" aria-placeholder="Day"> 
+                  <option value="">Day</option>
+                  <option value="">INR</option>
+                  <option value="">USD</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <select name="" id="" aria-placeholder="2020"> 
+                  <option value="">2020</option>
+                  <option value="">INR</option>
+                  <option value="">USD</option>
+                </select>
+              </div>
+            </div>
+
+            <p class="txt-song-detail">Description</p>
+            <textarea name="" id="" cols="65" rows="8" placeholder="Describe your sale. For example, talk about your song, your goals and what you will do with the money raised."></textarea>
+
+            <p class="txt-song-detail">Pictures (min 3, max 6)</p>
+            <div class="row">
+              <div class="col-md-4 img-box">
+                <div class="imgUp">
+                  <div class="imagePreview"></div>
+                  <label class="btn btn-primary">
+                    Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 img-box">
+                <div class="imgUp">
+                  <div class="imagePreview"></div>
+                  <label class="btn btn-primary">
+                    Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 img-box">
+                <div class="imgUp">
+                  <div class="imagePreview"></div>
+                  <label class="btn btn-primary">
+                    Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 img-box">
+                <div class="imgUp">
+                  <div class="imagePreview"></div>
+                  <label class="btn btn-primary">
+                    Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 img-box">
+                <div class="imgUp">
+                  <div class="imagePreview"></div>
+                  <label class="btn btn-primary">
+                    Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 img-box">
+                <div class="imgUp">
+                  <div class="imagePreview"></div>
+                  <label class="btn btn-primary">
+                    Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+                  </label>
+                </div>
+              </div>
+            </div>
+            
+            <div style="margin: 25px 0px 0px 0px;">
+              <a style="padding: 10px 85px;" data-toggle="modal" data-target="#PayoutSendModal" class="confirm-button">Activate sale</a>
+              <a style="padding: 10px 85px;" data-dismiss="modal" class="cancel-button">Cancel</a>
+            </div>
+
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- New Sale MODAL END -->
+
+  <!-- cancel MODAL START style="top: 240px;"-->
+  <div  class="modal fade payout-confirmation-modal" id="cancelModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="border-radius: 20px;">
+       
+        <div class="modal-body">
+          <button type="button" class="modal-close" data-dismiss="modal">×</button>
+          <h3> Cancel release?</h3>
+          <p class="pop-subhead">Cancelling is available until the release date, and any investors will receive a refund.</p>
+          
+          <div style="margin:0px 0px 10px 0px;">
+            <a data-dismiss="modal" class="cancel-button-modal">Confirm cancellation</a>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- cancel MODAL END -->
+
+  <!-- Investor MODAL START style="top: 240px;"-->
+  <div  class="modal fade investors-modal payout-confirmation-modal" id="InvestorModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="border-radius: 20px;padding: 15px;">
+        
+        <div class="modal-body">
+          
+          <div class="col-md-12">
+            <div class="row data-aos="fade-up">
+              <h4>You have 16 investors.</h4>
+              <div class="col-md-12 scroll-2 scrollbar-ripe-malinka" style="height: 440px;">
+                <div class="row data-aos="fade-up">
+
+                  <table class="modal-table">
+                    <tr>
+                      <th style="width: 50%;">User</th>
+                      <th style="width: 28%;">Share</th>
+                      <th style="width: 30%;">Expiry date</th>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="row">
+                          <div class="col-md-1">
+                            <input type="radio" name="gender" value="">
+                          </div>
+                          <div class="col-md-9">
+                            <h5>User Name</h5>
+                            <h6>X minutes ago</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td><h5>X%</h5></td>
+                      <td> <h5>16 Jul 2022</h5></td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="row">
+                          <div class="col-md-1">
+                            <input type="radio" name="gender" value="">
+                          </div>
+                          <div class="col-md-9">
+                            <h5>User Name</h5>
+                            <h6>X minutes ago</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td><h5>X%</h5></td>
+                      <td><h5>XX XXX 20XX</h5></td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="row">
+                          <div class="col-md-1">
+                            <input type="radio" name="gender" value="">
+                          </div>
+                          <div class="col-md-9">
+                            <h5>User Name</h5>
+                            <h6>X minutes ago</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td><h5>X%</h5></td>
+                      <td><h5>XX XXX 20XX</h5></td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="row">
+                          <div class="col-md-1">
+                            <input type="radio" name="gender" value="">
+                          </div>
+                          <div class="col-md-9">
+                            <h5>User Name</h5>
+                            <h6>X minutes ago</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td><h5>X%</h5></td>
+                      <td><h5>XX XXX 20XX</h5></td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="row">
+                          <div class="col-md-1">
+                            <input type="radio" name="gender" value="">
+                          </div>
+                          <div class="col-md-9">
+                            <h5>User Name</h5>
+                            <h6>X minutes ago</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td><h5>X%</h5></td>
+                      <td><h5>XX XXX 20XX</h5></td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="row">
+                          <div class="col-md-1">
+                            <input type="radio" name="gender" value="">
+                          </div>
+                          <div class="col-md-9">
+                            <h5>User Name</h5>
+                            <h6>X minutes ago</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td><h5>X%</h5></td>
+                      <td><h5>XX XXX 20XX</h5></td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="row">
+                          <div class="col-md-1">
+                            <input type="radio" name="gender" value="">
+                          </div>
+                          <div class="col-md-9">
+                            <h5>User Name</h5>
+                            <h6>X minutes ago</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td><h5>X%</h5></td>
+                      <td><h5>XX XXX 20XX</h5></td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="row">
+                          <div class="col-md-1">
+                            <input type="radio" name="gender" value="">
+                          </div>
+                          <div class="col-md-9">
+                            <h5>User Name</h5>
+                            <h6>X minutes ago</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td><h5>X%</h5></td>
+                      <td><h5>XX XXX 20XX</h5></td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="row">
+                          <div class="col-md-1">
+                            <input type="radio" name="gender" value="">
+                          </div>
+                          <div class="col-md-9">
+                            <h5>User Name</h5>
+                            <h6>X minutes ago</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td><h5>X%</h5></td>
+                      <td><h5>XX XXX 20XX</h5></td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="row">
+                          <div class="col-md-1">
+                            <input type="radio" name="gender" value="">
+                          </div>
+                          <div class="col-md-9">
+                            <h5>User Name</h5>
+                            <h6>X minutes ago</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td><h5>X%</h5></td>
+                      <td><h5>XX XXX 20XX</h5></td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="row">
+                          <div class="col-md-1">
+                            <input type="radio" name="gender" value="">
+                          </div>
+                          <div class="col-md-9">
+                            <h5>User Name</h5>
+                            <h6>X minutes ago</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td><h5>X%</h5></td>
+                      <td><h5>XX XXX 20XX</h5></td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="row">
+                          <div class="col-md-1">
+                            <input type="radio" name="gender" value="">
+                          </div>
+                          <div class="col-md-9">
+                            <h5>User Name</h5>
+                            <h6>X minutes ago</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td><h5>X%</h5></td>
+                      <td><h5>XX XXX 20XX</h5></td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="row">
+                          <div class="col-md-1">
+                            <input type="radio" name="gender" value="">
+                          </div>
+                          <div class="col-md-9">
+                            <h5>User Name</h5>
+                            <h6>X minutes ago</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td><h5>X%</h5></td>
+                      <td><h5>XX XXX 20XX</h5></td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="row">
+                          <div class="col-md-1">
+                            <input type="radio" name="gender" value="">
+                          </div>
+                          <div class="col-md-9">
+                            <h5>User Name</h5>
+                            <h6>X minutes ago</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td><h5>X%</h5></td>
+                      <td><h5>XX XXX 20XX</h5></td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="row">
+                          <div class="col-md-1">
+                            <input type="radio" name="gender" value="">
+                          </div>
+                          <div class="col-md-9">
+                            <h5>User Name</h5>
+                            <h6>X minutes ago</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td><h5>X%</h5></td>
+                      <td><h5>XX XXX 20XX</h5></td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="row">
+                          <div class="col-md-1">
+                            <input type="radio" name="gender" value="">
+                          </div>
+                          <div class="col-md-9">
+                            <h5>User Name</h5>
+                            <h6>X minutes ago</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td><h5>X%</h5></td>
+                      <td><h5>XX XXX 20XX</h5></td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="row">
+                          <div class="col-md-1">
+                            <input type="radio" name="gender" value="">
+                          </div>
+                          <div class="col-md-9">
+                            <h5>User Name</h5>
+                            <h6>X minutes ago</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td><h5>X%</h5></td>
+                      <td><h5>XX XXX 20XX</h5></td>
+                    </tr>
+
+                  </table>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Investor MODAL END -->
+
+  <main id="main">
+
+  <!-- ======= section start ======= -->
+  <div class="container" style="margin-top: 130px;margin-bottom:150px;">
+    <div class="row aos-init aos-animate" data-aos="fade-up">
+      
+      <div class="row">
+        <div class="col-md-7 song-detail">
+          <p>STEP 1</p>
+          <h3>Song details</h3>
+          <p>Releasing music with us is free. When releasing music with us, you can choose to sell shares of your songs’ streaming royalties to your fans. You set the price and the amount you want to sell. We charge a small service fee on your share sales.</p>
+          <h4>Artist details</h4>
+
+          <div class="row song-detail-box">
+            <div class="col-md-3">
+              <p>Artist name</p>
+            </div>
+            <div class="col-md-9">
+              <input type="text">
+            </div>
+          </div>
+
+          <div class="row song-detail-box">
+            <div class="col-md-3">
+              <p>Picture</p>
+            </div>
+            <div class="col-md-3">
+              <img src="../assets/studio-images/Profile Pic (Square) j.png" alt="Icon" style="width: 42%;">
+            </div>
+            <div class="col-md-6" style="margin: 10px 0px 0px 0px;">
+              <a style="color: #fff;padding:10px 50px;" class="contact-log-btn">Upload image</a>
+            </div>
+          </div>
+
+          <div class="row song-detail-box">
+            <div class="col-md-3">
+              <p>Description</p>
+            </div>
+            <div class="col-md-9">
+              <textarea style="width: 100%;padding: 10px 15px;margin: 5px 0px 5px 0px;" name="massage" cols="15" rows="5" placeholder="Describe yourself as an artist."></textarea>
+            </div>
+          </div>
+
+          <h4>Song details</h4>
+          <div class="row song-detail-box">
+            <div class="col-md-3">
+              <p>Release date</p>
+            </div>
+            <div class="col-md-9">
+              <div class="row">
+                <div class="col-md-3">
+                  <select name="" id="" aria-placeholder="Month"> 
+                    <option value="">Month</option>
+                    <option value="">INR</option>
+                    <option value="">USD</option>
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <select name="" id="" aria-placeholder="Day"> 
+                    <option value="">Day</option>
+                    <option value="">INR</option>
+                    <option value="">USD</option>
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <select name="" id="" aria-placeholder="2020"> 
+                    <option value="">2020</option>
+                    <option value="">INR</option>
+                    <option value="">USD</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row song-detail-box">
+            <div class="col-md-3">
+              <p>Record label</p>
+            </div>
+            <div class="col-md-9">
+              <input type="text">
+            </div>
+          </div>
+
+          <div class="row song-detail-box">
+            <div class="col-md-3">
+              <p>Audio file</p>
+            </div>
+            <div class="col-md-6" style="margin: 10px 0px 0px 0px;">
+              <a style="color: #fff;padding:10px 50px;" class="contact-log-btn">Choose file</a>
+            </div>
+          </div>
+
+          <div class="row song-detail-box">
+            <div class="col-md-3">
+              <p>Cover</p>
+            </div>
+            <div class="col-md-9">
+              <div class="imgUp">
+                <div class="imagePreview"></div>
+                <label class="btn btn-primary">
+                  Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 song-detail-sidebar" style="margin: 20px 0px 940px 30px;">
+          <h4>Review</h4>
+          <p>Your song will be submitted for review by our team to make sure it fulfils the terms and conditions of online stores.</p>
+        </div>
+      </div>
+
+      <!-- Second row start -->
+      <div class="row" style="margin-top:30px;">
+        <div class="col-md-7 song-detail">
+          <p>STEP 2</p>
+          <h3>Sale of shares</h3>
+          <p style="margin: 10px 0px 30px 0px;">Releasing music with us is free. When releasing music with us, you can choose to sell shares of your songs’ streaming royalties to your fans. You set the price and the amount you want to sell. We charge a small service fee on your share sales.</p>
+          <a style="margin:20px 0px;" class="close-button">Release without sale</a>
+          <p style="margin: 30px 0px 10px 0px;" class="txt-song-detail">What percentage of stream revenue would you like to sell?</p>
+          
+          <div class="row">
+            <div class="col-md-2">
+              <input style="width: 85%;" type="text" placeholder="XX"><span style="font-size:12px;">%</span> 
+            </div>
+            <div class="col-md-3">
+              <progress id="file" value="32" max="100"> 32% </progress>
+            </div>
+            <div class="col-md-2">
+              <p style="margin: 5px 0px;" class="dark-txt">Max. 55%</p>
+            </div>
+          </div>
+
+          <p class="txt-song-detail">How much would you like to charge for 1% of your song’s royalties?</p>
+          <div class="row">
+            <div class="col-md-2">
+              <input type="text" placeholder="XX">
+            </div>
+            <div class="col-md-2">
+              <select name="" id="">
+                <option value="">EUR</option>
+                <option value="">INR</option>
+                <option value="">USD</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <p style="margin: 5px 0px;" class="dark-txt">TOTAL ≈ XXX.XX EUR</p>
+            </div>
+          </div>
+
+          <p class="txt-song-detail">Expiry date (max 2 years)</p>
+          <div class="row">
+            <div class="col-md-2">
+              <select name="" id="" aria-placeholder="Month"> 
+                <option value="">Month</option>
+                <option value="">INR</option>
+                <option value="">USD</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <select name="" id="" aria-placeholder="Day"> 
+                <option value="">Day</option>
+                <option value="">INR</option>
+                <option value="">USD</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <select name="" id="" aria-placeholder="2020"> 
+                <option value="">2020</option>
+                <option value="">INR</option>
+                <option value="">USD</option>
+              </select>
+            </div>
+          </div>
+
+          <p class="txt-song-detail">Description</p>
+          <textarea name="" id="" cols="65" rows="8" placeholder="Describe your sale. For example, talk about your song, your goals and what you will do with the money raised."></textarea>
+
+          <p class="txt-song-detail">Pictures (min 3, max 6)</p>
+          <div class="row">
+            <div class="col-md-4 img-box">
+              <div class="imgUp">
+                <div class="imagePreview"></div>
+                <label class="btn btn-primary">
+                  Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+                </label>
+              </div>
+            </div>
+            <div class="col-md-4 img-box">
+              <div class="imgUp">
+                <div class="imagePreview"></div>
+                <label class="btn btn-primary">
+                  Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+                </label>
+              </div>
+            </div>
+            <div class="col-md-4 img-box">
+              <div class="imgUp">
+                <div class="imagePreview"></div>
+                <label class="btn btn-primary">
+                  Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+                </label>
+              </div>
+            </div>
+            <div class="col-md-4 img-box">
+              <div class="imgUp">
+                <div class="imagePreview"></div>
+                <label class="btn btn-primary">
+                  Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+                </label>
+              </div>
+            </div>
+            <div class="col-md-4 img-box">
+              <div class="imgUp">
+                <div class="imagePreview"></div>
+                <label class="btn btn-primary">
+                  Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+                </label>
+              </div>
+            </div>
+            <div class="col-md-4 img-box">
+              <div class="imgUp">
+                <div class="imagePreview"></div>
+                <label class="btn btn-primary">
+                  Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="col-md-12 song-detail-sidebar" style="margin: 20px 0px 200px 30px;">
+            <h4>Don’t want to sell shares?</h4>
+            <p>You can release your song with us without setting up a sale. You can still choose to sell shares later on.</p>
+          </div>
+          <div class="col-md-12 song-detail-sidebar" style="margin: 20px 0px 245px 30px;">
+            <h4>Expiry</h4>
+            <p>You choose the expiry date of these shares. On this date the shares will return to you.</p>
+          </div>
+          <div class="col-md-12 song-detail-sidebar" style="margin: 20px 0px 40px 30px;">
+            <h4>Pictures</h4>
+            <p>For best results, upload images in PNG format with a size larger than</p>
+          </div>
+        </div>
+      </div>
+      <!-- second row end -->
+
+      <!-- Third row start -->
+      <div class="row" style="margin-top:50px;">
+        <div class="col-md-12 song-detail">
+          <p>STEP 3</p>
+          <h3>Confirmation</h3>
+          <p style="margin: 10px 0px 30px 0px;">By clicking “Submit for review” you agree to the terms and conditions of StudioPop. Your can cancel at any time.</p>
+          <a style="padding: 10px 250px;margin:0px;" data-toggle="modal" data-target="#PayoutSendModal" class="confirm-button">Submit for review</a>
+        </div>
+      </div>
+      <!-- Third row end -->
+
+
+    </div>
+  </div>
+  <!-- End section -->
+
+  </main>
+  <!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="section-bg">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="footer-info">
+                  <a href="home.html"><img src="../assets/studio-images/StudioPop Logo/logo-white.png" alt="Logo" style="width: 50%;"></a>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="footer-links">
+                  <h4>Useful Links</h4>
+                  <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#about">FAQ</a></li>
+                    <li><a href="#">About StudioPop®</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div style="margin-top: 10px;" class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row bottom-bar">
+          <div class="col-lg-6">
+            <ul style="padding: 0px;" >
+              <li>Legal</li>
+              <li>Privacy Policy</li>
+              <li>Cookies</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <p>© 2020 StudioPop, Ltd. All Rights Reserved.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/counterup/counterup.min.js"></script>
+  <script src="../assets/vendor/venobox/venobox.min.js"></script>
+  <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+  <script>
+ 
+    $("ul li").click(function()
+      {
+      $("ul .active").removeClass("active");
+      $(this).addClass("active");
+    });
+
+    $(document).ready(function () {
+        $('#acc_pro').removeClass("active");
+        $('#acc_pro').addClass("active");
+    });
+
+    function Menu() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    
+
+
+    $(function() {
+        $(document).on("change",".uploadFile", function()
+        {
+            var uploadFile = $(this);
+            var files = !!this.files ? this.files : [];
+            if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
+    
+            if (/^image/.test( files[0].type)){ // only image file
+                var reader = new FileReader(); // instance of the FileReader
+                reader.readAsDataURL(files[0]); // read the local file
+    
+                reader.onloadend = function(){ // set image data as background of div
+                    //alert(uploadFile.closest(".upimage").find('.imagePreview').length);
+                uploadFile.closest(".imgUp").find('.imagePreview').css("background-image", "url("+this.result+")");
+                }
+            }
+          
+        });
+    });
+
+  </script>
+
+</body>
+
+</html>
