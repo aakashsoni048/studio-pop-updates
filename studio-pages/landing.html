@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>About</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Avenir Next font -->
+  <style type="text/css">
+    @import url("https://fast.fonts.net/lt/1.css?apiType=css&c=6d67bbe0-1ca1-4fb4-97e4-44351c947923&fontids=6149639,6149649,6149662");
+    @font-face{
+        font-family:"Avenir Next LT W05 Demi";
+        src:url("../Fonts/6149639/11ba579d-59f5-479e-b2dd-411ca230f60c.woff2") format("woff2"),url("../Fonts/6149639/f740c173-ce1a-4e47-a4e3-fab0a45da815.woff") format("woff");
+    }
+    @font-face{
+        font-family:"Avenir Next LT W05 Bold";
+        src:url("../Fonts/6149649/54a73ecc-af4b-4a5d-bc62-308e0fb53d83.woff2") format("woff2"),url("../Fonts/6149649/1cc134d7-e443-4d5b-887d-09e2af0aa119.woff") format("woff");
+    }
+    @font-face{
+        font-family:"Avenir Next LT W05 Regular";
+        src:url("../Fonts/6149662/146f526d-792d-4257-ba12-0fb6fbb8e31e.woff2") format("woff2"),url("../Fonts/6149662/2a1d06fe-73d7-4df1-9d59-5227c3c01d03.woff") format("woff");
+    }
+  </style> 
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <!-- <link href="../assets/css/style.css" rel="stylesheet"> -->
+  <link href="../assets/css/custom-style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="d-flex align-items-center">
+
+      <a href="about.html" class="logo mr-auto"><img src="../assets/studio-images/StudioPop Logo/logo-white@2x.png" alt="" class="img-fluid"></a>
+
+      <nav class="main-nav d-none d-lg-block">
+        <ul>
+          <li>
+            <input class="search-icon" type="text" id="myInput" placeholder="Search for names.." title="Type in a name">
+          </li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li class="active"><a href="about.html">About</a></li>
+          <li><a data-toggle="modal" data-target="#signModal">Sign Up</a></li>
+          <li><a data-toggle="modal" data-target="#logInModal">Log in</a></li>
+        </ul>
+      </nav><!-- .main-nav-->
+
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- SIGN UP MODAL START style="top: 240px;"-->
+  <div  class="modal fade" id="signModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="signup-modal modal-content">
+        <div class="">
+          <button type="button" class="modal-close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+
+          <div class="signup-social-box">
+            <i class="fa fa-facebook social-icon-modal" aria-hidden="true"></i>
+            <span>Continue with Facebook</span>
+          </div>
+          <div class="signup-social-box">
+            <img src="../assets/studio-images/google.jpg" alt="Icon">
+            <span>Continue with Google</span>
+          </div>
+          <div class="signup-social-box">
+            <img src="../assets/studio-images/apple.jpg" alt="Icon">
+            <span href="#">Continue with Apple</span>
+          </div>
+          <p class="middle-sign-txt">or</p>
+          <div class="signup-button">
+            <a class="close-signModal" data-toggle="modal" data-target="#signEmailModal">Sign up with email</a>
+          </div>
+          <p class="footer-txt">Already have an account? <span class="close-signModal-open-login" data-toggle="modal" data-target="#logInModal">Log in</span> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- SIGN UP MODAL END -->
+
+  <!-- SIGN UP With Email MODAL START style="top: 240px;"-->
+  <div  class="modal fade" id="signEmailModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="signup-modal modal-content">
+        <div class="">
+          <button type="button" class="modal-close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <input type="email" placeholder="Email">
+          <input type="text" placeholder="First name">
+          <input type="text" placeholder="Last name">
+          <input type="password" placeholder="Password">
+          
+          <div class="signup-button">
+            <a style="color: #fff;" href="contact.html">Sign up with email</a>
+          </div>
+          <p class="footer-txt">
+            <span>Sign up with Facebook, Google or Apple</span> 
+            <br>
+            Already have an account?
+            <span class="close-signEmailModal-open-login" data-toggle="modal" data-target="#logInModal" >Log in</span>
+           </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- SIGN UP With Email MODAL END -->
+
+  
+  <!-- Log In MODAL START style="top: 240px;"-->
+  <div  class="modal fade" id="logInModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="signup-modal modal-content">
+        <div class="">
+          <button type="button" class="modal-close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+
+          <div class="signup-social-box">
+            <i class="fa fa-facebook social-icon-modal" aria-hidden="true"></i>
+            <span>Continue with Facebook</span>
+          </div>
+          <div class="signup-social-box">
+            <img src="../assets/studio-images/google.jpg" alt="Icon">
+            <span>Continue with Google</span>
+          </div>
+          <div class="signup-social-box">
+            <img src="../assets/studio-images/apple.jpg" alt="Icon">
+            <span>Continue with Apple</span>
+          </div>
+          <p class="middle-sign-txt">or</p>
+          <input type="email" placeholder="Email">
+          <input type="password" placeholder="Password">
+          <div class="signup-button">
+            <a style="color: #fff;" href="home.html">Log In</a>
+          </div>
+          <p class="footer-txt">Don’t have an account? <span class="close-logInModal-open-signmodal" data-toggle="modal" data-target="#signModal">Sign up</span> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Log in MODAL END -->
+
+   <!-- ======= Hero Section ======= -->
+  <section id="hero" class="clearfix">
+    <div class="container d-flex h-100">
+      <div class="row justify-content-center align-self-center" data-aos="fade-up">
+        <div class="col-md-8 intro-info order-md-first order-last" data-aos="zoom-in" data-aos-delay="100">
+          <h2>Welcome to the future of music distribution</h2>
+          <p>StudioPop® is a platform that lets artists sell shares of their song’s royalties to fans.</p>
+          <div>
+            <a data-toggle="modal" data-target="#signModal" href="#" class="btn-get-started scrollto">Sign up</a>
+            <a data-toggle="modal" data-target="#signEmailModal" href="#" class="margin-media-query margin-left-30 btn-get-started scrollto">Sign in</a>
+          </div> 
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= boxes section start ======= -->
+    <section class="clearfix boxes-about">
+      <div class="h-100">
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-md-8" data-aos="zoom-in" data-aos-delay="100">
+            <h2>How it works</h2>
+          </div>
+        </div>
+       
+        <div style="margin-top: 30px;" class="row" data-aos="fade-up">
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
+            <div class="row margin-media-query">
+              <div class="col-md-2">
+                <img class="home-icon-1" src="../assets/studio-images/undraw_music_r1se.png" alt="home-icon">
+              </div>
+              <div class="col-md-8">
+                <h6>Step 1</h6>
+                <h5>Artists release songs and sell shares of royalties to fans.</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
+            <div class="row margin-media-query">
+              <div class="col-md-2">
+                <img class="home-icon-2" src="../assets/studio-images/undraw_transfer_money_rywa.png" alt="home-icon">
+              </div>
+              <div class="col-md-10">
+                <h6>Step 2</h6>
+                <h5>Fans support the artist by purchasing shares and promoting the song.</h5>
+              </div>
+            </div>            
+          </div>
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
+            <div class="row margin-media-query">
+              <div class="col-md-3">
+                <img class="home-icon-3" src="../assets/studio-images/undraw_Savings_re_eq4w.png" alt="home-icon">
+              </div>
+              <div class="col-md-9">
+                <h6>Step 3</h6>
+                <h5>The song generates revenue, and fans get their share.</h5>
+              </div>
+            </div>               
+          </div>
+        </div>
+  
+      </div>
+    </section>
+    <!-- boxes section end -->
+
+  <!-- ======= two column background section start ======= -->
+  <section class="clearfix about-two-column-1 two-section-text">
+      <div class="h-100">
+        <div class="row justify-content-center align-self-center" data-aos="fade-up">
+          
+          <div class="col-md-6 intro-info order-md-first order-last" data-aos="zoom-in" data-aos-delay="100">
+            <h2>Now fans and artists can share the journey</h2>
+            <p>As a fan, support your favourite artists and play a part in their journey. Their success is your success.</p>
+            <a href="#about" class="btn-get-started scrollto">Learn more</a>
+          </div>
+
+          <div class="col-md-6">
+          </div>
+
+        </div>
+      </div>
+    </section>
+  <!-- two column background section end -->
+
+  <!-- ======= boxes 2 section section start ======= -->
+  <section class="clearfix boxes-about">
+    <div class="h-100">
+
+      <div class="row" data-aos="fade-up">
+        <div class="col-md-8" data-aos="zoom-in" data-aos-delay="100">
+          <h2>How it works</h2>
+        </div>
+      </div>
+     
+      <div style="margin-top: 30px;" class="row" data-aos="fade-up">
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
+          <div class="row margin-media-query">
+            <div class="col-md-2">
+              <img class="home-icon-1" src="../assets/studio-images/undraw_music_r1se.png" alt="home-icon">
+            </div>
+            <div class="col-md-8">
+              <h6>Step 1</h6>
+              <h5>Artists release songs and sell shares of royalties to fans.</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
+          <div class="row margin-media-query">
+            <div class="col-md-2">
+              <img class="home-icon-2" src="../assets/studio-images/undraw_transfer_money_rywa.png" alt="home-icon">
+            </div>
+            <div class="col-md-10">
+              <h6>Step 2</h6>
+              <h5>Fans support the artist by purchasing shares and promoting the song.</h5>
+            </div>
+          </div>            
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
+          <div class="row margin-media-query">
+            <div class="col-md-3">
+              <img class="home-icon-3" src="../assets/studio-images/undraw_Savings_re_eq4w.png" alt="home-icon">
+            </div>
+            <div class="col-md-9">
+              <h6>Step 3</h6>
+              <h5>The song generates revenue, and fans get their share.</h5>
+            </div>
+          </div>               
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- boxes 2 section end -->
+
+  <!-- ======= two column background section start ======= -->
+  <section class="clearfix about-two-column-2 two-section-text">
+    <div class="h-100">
+      <div class="row justify-content-center align-self-center" data-aos="fade-up">
+        
+        <div class="col-md-6">
+        </div>
+
+        <div class="col-md-6 intro-info" data-aos="zoom-in" data-aos-delay="100">
+          <h2>Release a song for free and choose how much to sell</h2>
+          <p>We will distribute your song for free. You can cancel the sale before release if you change your mind.</p>
+          <a href="#about" class="btn-get-started scrollto">Learn more</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+<!-- two column background section end -->
+
+
+  </main>
+  <!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="section-bg">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="footer-info">
+                  <a href="home.html"><img src="../assets/studio-images/StudioPop Logo/logo-white.png" alt="Logo" style="width: 50%;"></a>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="footer-links">
+                  <h4>Useful Links</h4>
+                  <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#about">FAQ</a></li>
+                    <li><a href="#">About StudioPop®</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div style="margin-top: 10px;" class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row bottom-bar">
+          <div class="col-lg-6">
+            <ul style="padding: 0px;" >
+              <li>Legal</li>
+              <li>Privacy Policy</li>
+              <li>Cookies</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <p>© 2020 StudioPop, Ltd. All Rights Reserved.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/counterup/counterup.min.js"></script>
+  <script src="../assets/vendor/venobox/venobox.min.js"></script>
+  <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+  <script>
+    $(".close-signModal").on( "click", function() {
+      $('#signEmailModal').modal('show'); 
+      $('#signModal').modal('hide');
+    });
+
+    $(".close-signModal-open-login").on( "click", function() {
+      $('#signModal').modal('hide'); 
+      $('#logInModal').modal('show');
+    });
+
+    $(".close-logInModal-open-signmodal").on( "click", function() {
+      $('#signModal').modal('show'); 
+      $('#logInModal').modal('hide');
+    });
+
+    $(".close-signEmailModal-open-login").on( "click", function() {
+      $('#logInModal').modal('show'); 
+      $('#signEmailModal').modal('hide');
+    });
+    
+    
+  </script>
+
+</body>
+
+</html>

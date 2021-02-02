@@ -83,10 +83,14 @@
   </div>
 
   <div id="audio_open_id" class="audioopen">
-    <audio controls >
-      <source src="horse.ogg" type="audio/ogg">
-      <source src="horse.mp3" type="audio/mpeg">
-    </audio>
+    <div class="container-audio">
+         <a class="artist-name" href="#">Artist Name</a>
+         <a class="song-name" href="#">Song Name</a>
+      <audio controls  loop autoplay>
+        <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/new_year_dubstep_minimix.ogg" type="audio/ogg">
+        Your browser dose not Support the audio Tag
+      </audio>
+    </div>
   </div>
   
   <!-- Change Password MODAL START style="top: 240px;"-->
@@ -169,7 +173,7 @@
       <!-- Modal content-->
       <div class="modal-content" style="border-radius: 20px;width: 580px;">
         <div class="modal-body">
-          <p class="back-button"><</p>
+          <p class="back-button"> <a href="song-name.html">< </a> </p>
           <div style="padding:5px 20px;">
             <h3>Purchase song shares</h3>
 

@@ -82,6 +82,16 @@
     <a href="about.html">Log out</a>
   </div>
 
+  <div id="audio_open_id" class="audioopen">
+    <div class="container-audio">
+         <a class="artist-name" href="#">Artist Name</a>
+         <a class="song-name" href="#">Song Name</a>
+      <audio controls  loop autoplay>
+        <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/new_year_dubstep_minimix.ogg" type="audio/ogg">
+        Your browser dose not Support the audio Tag
+      </audio>
+    </div>
+  </div>
   
   <!-- Change Password MODAL START style="top: 240px;"-->
   <div  class="modal fade change-password-modal" id="changePassowrdModal" role="dialog">
@@ -213,7 +223,7 @@
   <main id="main">
 
   <!-- ======= section start ======= -->
-  <section class="discover-top">
+  <section class="myshare-top">
     <div class="container">
       <div class="row  main-contain">
         <div class="col-lg-12">
@@ -227,8 +237,7 @@
         <div class="col-lg-3">
           <span class="overlay">
             <img src="../assets/studio-images/product2.png" class="play-img">
-            <i class="fa fa-play" style=" position: absolute;
-            top: -30px;left: 35%; font-size: 80px"></i>
+            <i onclick="Audio_play()" class="fa fa-play play-icon-img"></i>
           </span>
         </div>
 
@@ -244,7 +253,7 @@
             </div>
             <div>
              <p style="margin-left: 75px;" class="paregrap_text">  <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
-               There is an active sale.<a href="#">Go to sale page</a></p>
+               There is an active sale.<a href="song-name.html">  Go to sale page</a></p>
             </div>
          </div>
         </div>
@@ -274,8 +283,7 @@
       <div class="col-lg-3">
         <span class="overlay">
           <img src="../assets/studio-images/product2.png" class="play-img">
-          <i class="fa fa-play" style=" position: absolute;
-          top: -30px;left: 35%; font-size: 80px"></i>
+          <i onclick="Audio_play()" class="fa fa-play play-icon-img" ></i>
         </span>
       </div>
 
@@ -404,6 +412,10 @@
 
     function Menu() {
       document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    function Audio_play(){
+      document.getElementById("audio_open_id").classList.toggle("show");
     }
 
   </script>

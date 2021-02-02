@@ -82,7 +82,17 @@
     <a href="about.html">Log out</a>
   </div>
 
-  
+  <div id="audio_open_id" class="audioopen">
+    <div class="container-audio">
+         <a class="artist-name" href="#">Artist Name</a>
+         <a class="song-name" href="#">Song Name</a>
+      <audio controls  loop autoplay>
+        <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/new_year_dubstep_minimix.ogg" type="audio/ogg">
+        Your browser dose not Support the audio Tag
+      </audio>
+    </div>
+  </div>
+
   <!-- Change Password MODAL START style="top: 240px;"-->
   <div  class="modal fade change-password-modal" id="changePassowrdModal" role="dialog">
     <div class="modal-dialog">
@@ -164,7 +174,7 @@
       <div class="modal-content modal-580" style="border-radius: 20px;">
         
         <div class="modal-body">
-          <p class="back-button"><</p>
+          <p class="back-button"><a href="homerelease.html"><</a> </p>
           <div style="padding:5px 20px;">
 
             <h3>Edit sale</h3>
@@ -303,7 +313,7 @@
       <div class="modal-content modal-580" style="border-radius: 20px;">
         
         <div class="modal-body">
-          <p class="back-button"><</p>
+          <p class="back-button"><a href="homerelease.html"><</a></p>
           <div style="padding:5px 20px;">
 
             <h3>New sale</h3>
@@ -780,8 +790,7 @@
         <div class="col-md-3">
           <span class="overlay">
             <img src="../assets/studio-images/product2.png" class="play-img">
-            <i class="fa fa-play" style=" position: absolute;
-            top: -30px;left: 35%; font-size: 80px"></i>
+            <i onclick="Audio_play()" class="fa fa-play play-icon-img"></i>
           </span>
         </div>    
 
@@ -813,7 +822,7 @@
           <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
         </h6>
         <p  class="paregrap_text" style="margin:0px;padding: 5px 0px;">
-          <a href="#">Go to sale page</a>
+          <a href="song-name.html">Go to sale page</a>
         </p>
         <p class="paregrap_text paragra_text">Expiry date : 15 May 2021</p>
         
@@ -837,8 +846,7 @@
       <div class="col-md-3">
         <span class="overlay">
           <img src="../assets/studio-images/product2.png" class="play-img">
-          <i class="fa fa-play" style=" position: absolute;
-          top: -30px;left: 35%; font-size: 80px"></i>
+          <i onclick="Audio_play()" class="fa fa-play play-icon-img"></i>
         </span>
       </div>    
 
@@ -969,8 +977,9 @@
       document.getElementById("myDropdown").classList.toggle("show");
     }
 
-    
-
+    function Audio_play(){
+      document.getElementById("audio_open_id").classList.toggle("show");
+    }
 
     $(function() {
         $(document).on("change",".uploadFile", function()

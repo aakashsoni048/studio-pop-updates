@@ -632,6 +632,17 @@ section {
   border: 1px solid #C9CDD1;
   outline: none;
 }
+.margin-about-us {
+  margin: 50px 0px 0px 0px;
+}
+.about-us-head{
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.26px;
+  color: #091124;
+  padding: 10px 0px;
+  margin: 0px 0 10px 0;
+}
 .search-icon {
   background: #ffffff;
   border-radius: 20px;
@@ -1494,10 +1505,10 @@ section {
 /* Payment Page Css end */
 
 /*song name page css start*/
-  .audioopen{
+  .audioopen {
    display: none; 
    position: absolute;
-   bottom: -430px;
+   bottom: -150px;
    right: 270px;
    width: 60%;
    overflow: auto;
@@ -1507,6 +1518,32 @@ section {
    border: 1px solid #C9CDD1;
    padding: 0px;
    line-height: 0px;
+  }
+  .artist-name {
+    text-align: left;
+    letter-spacing: -0.26px;
+    color: #3C4D5F;
+    opacity: 1;
+    float: right;
+    font-size: 16px;
+    margin: 15px 20px 10px 0px;
+  }
+  .song-name {
+    text-align: left;
+    letter-spacing: -0.26px;
+    color: #091124;
+    opacity: 1;
+    float: right;
+    font-size: 16px;
+    margin: 35px -84px 10px 0px;
+  }
+  audio {
+    width: 87%;
+    outline: none;
+    border: none;
+    background-color: #ffffff;
+    background: #ffffff;
+    border-radius: 0px;
   }
   .play-icon-img{
     position: absolute;
@@ -1632,6 +1669,9 @@ section {
 /*song name css end*/
 
 /*myshare page css start*/
+.myshare-top{
+  margin: 50px 0px 0px 0px;
+}
 .overlay
 {
   position: relative;
@@ -1725,7 +1765,7 @@ section {
   color: #D51E41; 
   text-align: center;
   font-weight: 400;
-  padding: 8px 40px 10px 40px;
+  padding: 8px 35px 10px 35px;
   background: transparent;
   border: 2px solid #D51E41;
   border-radius: 27px;
@@ -2254,6 +2294,21 @@ section {
       .play-img {
         width: 210px;
       }
+      .audioopen {
+        bottom: -470px;
+        right: 0px;
+        width: 100%;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+        z-index: 999999;
+        background: #FFFFFF no-repeat;
+        border: 1px solid #C9CDD1;
+        padding: 0px;
+        line-height: 0px;
+      }
+      audio {
+        width: 70%;
+      }
       /* song name end */
       /* home release page css end */
     }
@@ -2341,6 +2396,14 @@ section {
       .play-img {
         width: 210px;
       }
+      .audioopen {
+        bottom: 165px;
+        right: 0px;
+        width: 100%;
+      }
+      audio {
+        width: 85%;
+      }
       /* song name end */
     }
   /* Ipad PRO*/
@@ -2391,10 +2454,15 @@ section {
         .play-img {
           width: 210px;
         }
+        .audioopen {
+          bottom: 400px;
+          right: 0px;
+          width: 100%;
+        }
         /* song name end */
     }
 
-    /* About Page css end */
+    
 
 /* Media css of all pages end */
 
