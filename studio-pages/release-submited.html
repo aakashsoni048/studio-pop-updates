@@ -42,6 +42,10 @@
   <!-- Template Main CSS File -->
   <!-- <link href="../assets/css/style.css" rel="stylesheet"> -->
   <link href="../assets/css/custom-style.css" rel="stylesheet">
+
+  <style>
+    .show {display: block;}
+  </style>
 </head>
 
 <body>
@@ -68,106 +72,16 @@
   </header>
   <!-- End Header -->
 
-  
-  <!-- SIGN UP MODAL START style="top: 240px;"-->
-  <div  class="modal fade" id="signModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="signup-modal modal-content">
-        <div class="">
-          <button type="button" class="modal-close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-
-          <div class="signup-social-box">
-            <i class="fa fa-facebook social-icon-modal" aria-hidden="true"></i>
-            <span>Continue with Facebook</span>
-          </div>
-          <div class="signup-social-box">
-            <img src="../assets/studio-images/google.jpg" alt="Icon">
-            <span>Continue with Google</span>
-          </div>
-          <div class="signup-social-box">
-            <img src="../assets/studio-images/apple.jpg" alt="Icon">
-            <span>Continue with Apple</span>
-          </div>
-          <p class="middle-sign-txt">or</p>
-          <div class="signup-button">
-            <a data-toggle="modal" data-target="#signEmailModal">Sign up with email</a>
-          </div>
-          <p class="footer-txt">Already have an account? <span>Log in</span> </p>
-        </div>
-      </div>
-    </div>
+  <div id="myDropdown" class="dropdown-content">
+    <h5>Menu</h5>
+    <a href="#acc_pro" role="tab" data-toggle="tab">Account & profile</a>
+    <a href="#pay_out" role="tab" data-toggle="tab">Payment & payout</a>
+    <a href="#setting" role="tab" data-toggle="tab">Settings</a>
+    <a href="#help_faq" role="tab" data-toggle="tab">Help & FAQ</a>
+    <a href="Release-intro.html">Release a song</a>
+    <a href="contact-1.html">Contact us</a>
+    <a href="landing.html">Log out</a>
   </div>
-  <!-- SIGN UP MODAL END -->
-
-  <!-- Log In MODAL START style="top: 240px;"-->
-  <div  class="modal fade" id="logInModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="signup-modal modal-content">
-        <div class="">
-          <button type="button" class="modal-close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-
-          <div class="signup-social-box">
-            <i class="fa fa-facebook social-icon-modal" aria-hidden="true"></i>
-            <span>Continue with Facebook</span>
-          </div>
-          <div class="signup-social-box">
-            <img src="../assets/studio-images/google.jpg" alt="Icon">
-            <span>Continue with Google</span>
-          </div>
-          <div class="signup-social-box">
-            <img src="../assets/studio-images/apple.jpg" alt="Icon">
-            <span>Continue with Apple</span>
-          </div>
-          <p class="middle-sign-txt">or</p>
-          <input type="email" placeholder="Email">
-          <input type="password" placeholder="Password">
-          <div class="signup-button">
-            <a style="color: #fff;" href="home.html">Log In</a>
-          </div>
-          <p class="footer-txt">Don’t have an account? <span data-toggle="modal" data-target="#signModal">Sign up</span> </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Log in MODAL END -->
-
-  <!-- SIGN UP With Email MODAL END START style="top: 240px;"-->
-  <div  class="modal fade" id="signEmailModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="signup-modal modal-content">
-        <div class="">
-          <button type="button" class="modal-close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          <input type="email" placeholder="Email">
-          <input type="text" placeholder="First name">
-          <input type="text" placeholder="Last name">
-          <input type="password" placeholder="Password">
-          
-          <div class="signup-button">
-            <a style="color: #fff;" href="contact.html">Sign up with email</a>
-          </div>
-          <p class="footer-txt">
-            <span>Sign up with Facebook, Google or Apple</span> 
-            <br>
-            Already have an account?
-            <span>Log in</span>
-           </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- SIGN UP With Email MODAL END -->
 
   <main id="main">
 
@@ -177,8 +91,8 @@
         <div class="center contact-box">
           <h3>Release submitted!</h3>
           <p>Your release will be reviewed by our team. As soon as we’ve checked it and everything looks good, your sale will become active. You can still cancel your release (even if a sale is open) until the release date - investors will simply receive a refund.</p>
-          <div>
-            <button style="margin: 10px 190px;" class="light-blue-btn"><a href="home.html" class="contact-btn">Return</a></button>
+          <div style="text-align: center;">
+            <button class="light-blue-btn"><a href="home.html" class="contact-btn">Return</a></button>
           </div>
         </div>
       </div>
@@ -205,6 +119,11 @@
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
 
+  <script>
+    function Menu() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+  </script>
 </body>
 
 </html>

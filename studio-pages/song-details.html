@@ -129,688 +129,11 @@
     <a href="contact-1.html">Contact us</a>
     <a href="about.html">Log out</a>
   </div>
-  
-  <!-- Change Password MODAL START style="top: 240px;"-->
-  <div  class="modal fade change-password-modal" id="changePassowrdModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="signup-modal modal-content">
-        
-        <div class="modal-body">
-          <p style="text-align: center;">
-            <img style="width: 35px;height: auto;" src="../assets/studio-images/lock.png" alt="">
-          </p>
-          <h3>Change password</h3>
-          <p>Old password</p>
-          <input type="password" placeholder="">
-          <p>New password</p>
-          <input type="password" placeholder="">
-          <p>Confirm password</p>
-          <input type="password" placeholder="">
-
-          <div class="">
-            <a class="confirm-button">Confirm</a>
-            <a data-dismiss="modal" class="cancel-button">Cancel</a>
-          </div>
-         
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Change Password MODAL END -->
-
-  
-  <!-- Add Payment Method MODAL START style="top: 240px;"-->
-  <div  class="modal fade payment-method-modal" id="AddPaymentMethodModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content" style="border-radius: 20px;">
-        
-        <div class="modal-body">
-          <h3>Add payment method</h3>
-          <p>First name</p>
-          <input class="half-50-width" type="text" placeholder="Ryan">
-          <p>Card info</p>
-          <input style="margin-bottom: -1px;" type="text" placeholder="Card number">
-          <input class="pay-method-custom-field" type="text" placeholder="Expiration">
-          <input class="pay-method-custom-field1" type="text" placeholder="CVV">
-          
-          <div class="row">
-            <div class="col-md-4">
-              <p>Billing info</p>
-              <input type="text" placeholder="Zip code">
-            </div>
-            <div class="col-md-8">
-              <p style="margin: 2px 0px 2px 0px;">Country/region</p>
-              <select class="country-select">
-                <option>Spain</option>
-                <option>India</option>
-                <option>America</option>
-              </select>
-            </div>
-          </div>
-          
-          <div style="margin: 5px 0px;">
-            <a style="padding: 10px 85px;" class="confirm-button">Done</a>
-            <a style="padding: 10px 85px;" data-dismiss="modal" class="cancel-button">Cancel</a>
-          </div>
-         
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Add Payment Method MODAL END -->
-
-  <!-- edit Song MODAL START style="top: 240px;"-->
-  <div  class="modal fade edit-song-modal" id="editSongModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content" style="border-radius: 20px;width: 580px;">
-        
-        <div class="modal-body">
-          <p class="back-button"><</p>
-          <div style="padding:5px 20px;">
-
-            <h3>Edit sale</h3>
-            <a class="close-button">Close sale</a>
-            <p class="txt-song-detail">What percentage of stream revenue would you like to sell?</p>
-            
-            <div class="row">
-              <div class="col-md-3">
-                <input style="width: 85%;" type="text" placeholder="XX"><span style="font-size:12px;">%</span> 
-              </div>
-              <div class="col-md-5">
-                <progress id="file" value="32" max="100"> 32% </progress>
-              </div>
-              <div class="col-md-3">
-                <p class="dark-txt">Max. 55%</p>
-              </div>
-            </div>
-
-            <p class="txt-song-detail">How much would you like to charge for 1% of your song’s royalties?</p>
-            <div class="row">
-              <div class="col-md-3">
-                <input type="text" placeholder="XX">
-              </div>
-              <div class="col-md-3">
-                <select name="" id="">
-                  <option value="">EUR</option>
-                  <option value="">INR</option>
-                  <option value="">USD</option>
-                </select>
-              </div>
-              <div class="col-md-5">
-                <p class="dark-txt">TOTAL ≈ XXX.XX EUR</p>
-              </div>
-            </div>
-
-            <p class="txt-song-detail">Expiry date (max 2 years)</p>
-            <div class="row">
-              <div class="col-md-3">
-                <select name="" id="" aria-placeholder="Month"> 
-                  <option value="">Month</option>
-                  <option value="">INR</option>
-                  <option value="">USD</option>
-                </select>
-              </div>
-              <div class="col-md-3">
-                <select name="" id="" aria-placeholder="Day"> 
-                  <option value="">Day</option>
-                  <option value="">INR</option>
-                  <option value="">USD</option>
-                </select>
-              </div>
-              <div class="col-md-3">
-                <select name="" id="" aria-placeholder="2020"> 
-                  <option value="">2020</option>
-                  <option value="">INR</option>
-                  <option value="">USD</option>
-                </select>
-              </div>
-            </div>
-
-            <p class="txt-song-detail">Description</p>
-            <textarea name="" id="" cols="65" rows="8" placeholder="Describe your sale. For example, talk about your song, your goals and what you will do with the money raised."></textarea>
-
-            <p class="txt-song-detail">Pictures (min 3, max 6)</p>
-            <div class="row">
-              <div class="col-md-4 img-box">
-                <div class="imgUp">
-                  <div class="imagePreview"></div>
-                  <label class="btn btn-primary">
-                    Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
-                  </label>
-                </div>
-              </div>
-              <div class="col-md-4 img-box">
-                <div class="imgUp">
-                  <div class="imagePreview"></div>
-                  <label class="btn btn-primary">
-                    Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
-                  </label>
-                </div>
-              </div>
-              <div class="col-md-4 img-box">
-                <div class="imgUp">
-                  <div class="imagePreview"></div>
-                  <label class="btn btn-primary">
-                    Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
-                  </label>
-                </div>
-              </div>
-              <div class="col-md-4 img-box">
-                <div class="imgUp">
-                  <div class="imagePreview"></div>
-                  <label class="btn btn-primary">
-                    Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
-                  </label>
-                </div>
-              </div>
-              <div class="col-md-4 img-box">
-                <div class="imgUp">
-                  <div class="imagePreview"></div>
-                  <label class="btn btn-primary">
-                    Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
-                  </label>
-                </div>
-              </div>
-              <div class="col-md-4 img-box">
-                <div class="imgUp">
-                  <div class="imagePreview"></div>
-                  <label class="btn btn-primary">
-                    Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
-                  </label>
-                </div>
-              </div>
-            </div>
-            
-            <div style="margin: 25px 0px 0px 0px;">
-              <a style="padding: 10px 85px;" data-toggle="modal" data-target="#PayoutSendModal" class="confirm-button">Save changes</a>
-              <a style="padding: 10px 85px;" data-dismiss="modal" class="cancel-button">Cancel</a>
-            </div>
-
-          </div>
-         
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- edit Song MODAL END -->
-
-  
-
-  <!-- New Sale MODAL START style="top: 240px;"-->
-  <div  class="modal fade edit-song-modal" id="NewSaleModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content" style="border-radius: 20px;width: 580px;">
-        
-        <div class="modal-body">
-          <p class="back-button"><</p>
-          <div style="padding:5px 20px;">
-
-            <h3>Edit sale</h3>
-            <a class="close-button">New sale</a>
-            <p class="txt-song-detail">What percentage of stream revenue would you like to sell?</p>
-            
-            <div class="row">
-              <div class="col-md-3">
-                <input style="width: 85%;" type="text" placeholder="XX"><span style="font-size:12px;">%</span> 
-              </div>
-              <div class="col-md-5">
-                <progress id="file" value="32" max="100"> 32% </progress>
-              </div>
-              <div class="col-md-3">
-                <p class="dark-txt">Max. 55%</p>
-              </div>
-            </div>
-
-            <p class="txt-song-detail">How much would you like to charge for 1% of your song’s royalties?</p>
-            <div class="row">
-              <div class="col-md-3">
-                <input type="text" placeholder="XX">
-              </div>
-              <div class="col-md-3">
-                <select name="" id="">
-                  <option value="">EUR</option>
-                  <option value="">INR</option>
-                  <option value="">USD</option>
-                </select>
-              </div>
-              <div class="col-md-5">
-                <p class="dark-txt">TOTAL ≈ XXX.XX EUR</p>
-              </div>
-            </div>
-
-            <p class="txt-song-detail">Expiry date (max 2 years)</p>
-            <div class="row">
-              <div class="col-md-3">
-                <select name="" id="" aria-placeholder="Month"> 
-                  <option value="">Month</option>
-                  <option value="">INR</option>
-                  <option value="">USD</option>
-                </select>
-              </div>
-              <div class="col-md-3">
-                <select name="" id="" aria-placeholder="Day"> 
-                  <option value="">Day</option>
-                  <option value="">INR</option>
-                  <option value="">USD</option>
-                </select>
-              </div>
-              <div class="col-md-3">
-                <select name="" id="" aria-placeholder="2020"> 
-                  <option value="">2020</option>
-                  <option value="">INR</option>
-                  <option value="">USD</option>
-                </select>
-              </div>
-            </div>
-
-            <p class="txt-song-detail">Description</p>
-            <textarea name="" id="" cols="65" rows="8" placeholder="Describe your sale. For example, talk about your song, your goals and what you will do with the money raised."></textarea>
-
-            <p class="txt-song-detail">Pictures (min 3, max 6)</p>
-            <div class="row">
-              <div class="col-md-4 img-box">
-                <div class="imgUp">
-                  <div class="imagePreview"></div>
-                  <label class="btn btn-primary">
-                    Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
-                  </label>
-                </div>
-              </div>
-              <div class="col-md-4 img-box">
-                <div class="imgUp">
-                  <div class="imagePreview"></div>
-                  <label class="btn btn-primary">
-                    Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
-                  </label>
-                </div>
-              </div>
-              <div class="col-md-4 img-box">
-                <div class="imgUp">
-                  <div class="imagePreview"></div>
-                  <label class="btn btn-primary">
-                    Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
-                  </label>
-                </div>
-              </div>
-              <div class="col-md-4 img-box">
-                <div class="imgUp">
-                  <div class="imagePreview"></div>
-                  <label class="btn btn-primary">
-                    Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
-                  </label>
-                </div>
-              </div>
-              <div class="col-md-4 img-box">
-                <div class="imgUp">
-                  <div class="imagePreview"></div>
-                  <label class="btn btn-primary">
-                    Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
-                  </label>
-                </div>
-              </div>
-              <div class="col-md-4 img-box">
-                <div class="imgUp">
-                  <div class="imagePreview"></div>
-                  <label class="btn btn-primary">
-                    Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
-                  </label>
-                </div>
-              </div>
-            </div>
-            
-            <div style="margin: 25px 0px 0px 0px;">
-              <a style="padding: 10px 85px;" data-toggle="modal" data-target="#PayoutSendModal" class="confirm-button">Activate sale</a>
-              <a style="padding: 10px 85px;" data-dismiss="modal" class="cancel-button">Cancel</a>
-            </div>
-
-          </div>
-         
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- New Sale MODAL END -->
-
-  <!-- cancel MODAL START style="top: 240px;"-->
-  <div  class="modal fade payout-confirmation-modal" id="cancelModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content" style="border-radius: 20px;">
-       
-        <div class="modal-body">
-          <button type="button" class="modal-close" data-dismiss="modal">×</button>
-          <h3> Cancel release?</h3>
-          <p class="pop-subhead">Cancelling is available until the release date, and any investors will receive a refund.</p>
-          
-          <div style="margin:0px 0px 10px 0px;">
-            <a data-dismiss="modal" class="cancel-button-modal">Confirm cancellation</a>
-          </div>
-         
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- cancel MODAL END -->
-
-  <!-- Investor MODAL START style="top: 240px;"-->
-  <div  class="modal fade investors-modal payout-confirmation-modal" id="InvestorModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content" style="border-radius: 20px;padding: 15px;">
-        
-        <div class="modal-body">
-          
-          <div class="col-md-12">
-            <div class="row data-aos="fade-up">
-              <h4>You have 16 investors.</h4>
-              <div class="col-md-12 scroll-2 scrollbar-ripe-malinka" style="height: 440px;">
-                <div class="row data-aos="fade-up">
-
-                  <table class="modal-table">
-                    <tr>
-                      <th style="width: 50%;">User</th>
-                      <th style="width: 28%;">Share</th>
-                      <th style="width: 30%;">Expiry date</th>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="row">
-                          <div class="col-md-1">
-                            <input type="radio" name="gender" value="">
-                          </div>
-                          <div class="col-md-9">
-                            <h5>User Name</h5>
-                            <h6>X minutes ago</h6>
-                          </div>
-                        </div>
-                      </td>
-                      <td><h5>X%</h5></td>
-                      <td> <h5>16 Jul 2022</h5></td>
-                    </tr>
-
-                    <tr>
-                      <td>
-                        <div class="row">
-                          <div class="col-md-1">
-                            <input type="radio" name="gender" value="">
-                          </div>
-                          <div class="col-md-9">
-                            <h5>User Name</h5>
-                            <h6>X minutes ago</h6>
-                          </div>
-                        </div>
-                      </td>
-                      <td><h5>X%</h5></td>
-                      <td><h5>XX XXX 20XX</h5></td>
-                    </tr>
-
-                    <tr>
-                      <td>
-                        <div class="row">
-                          <div class="col-md-1">
-                            <input type="radio" name="gender" value="">
-                          </div>
-                          <div class="col-md-9">
-                            <h5>User Name</h5>
-                            <h6>X minutes ago</h6>
-                          </div>
-                        </div>
-                      </td>
-                      <td><h5>X%</h5></td>
-                      <td><h5>XX XXX 20XX</h5></td>
-                    </tr>
-
-                    <tr>
-                      <td>
-                        <div class="row">
-                          <div class="col-md-1">
-                            <input type="radio" name="gender" value="">
-                          </div>
-                          <div class="col-md-9">
-                            <h5>User Name</h5>
-                            <h6>X minutes ago</h6>
-                          </div>
-                        </div>
-                      </td>
-                      <td><h5>X%</h5></td>
-                      <td><h5>XX XXX 20XX</h5></td>
-                    </tr>
-
-                    <tr>
-                      <td>
-                        <div class="row">
-                          <div class="col-md-1">
-                            <input type="radio" name="gender" value="">
-                          </div>
-                          <div class="col-md-9">
-                            <h5>User Name</h5>
-                            <h6>X minutes ago</h6>
-                          </div>
-                        </div>
-                      </td>
-                      <td><h5>X%</h5></td>
-                      <td><h5>XX XXX 20XX</h5></td>
-                    </tr>
-
-                    <tr>
-                      <td>
-                        <div class="row">
-                          <div class="col-md-1">
-                            <input type="radio" name="gender" value="">
-                          </div>
-                          <div class="col-md-9">
-                            <h5>User Name</h5>
-                            <h6>X minutes ago</h6>
-                          </div>
-                        </div>
-                      </td>
-                      <td><h5>X%</h5></td>
-                      <td><h5>XX XXX 20XX</h5></td>
-                    </tr>
-
-                    <tr>
-                      <td>
-                        <div class="row">
-                          <div class="col-md-1">
-                            <input type="radio" name="gender" value="">
-                          </div>
-                          <div class="col-md-9">
-                            <h5>User Name</h5>
-                            <h6>X minutes ago</h6>
-                          </div>
-                        </div>
-                      </td>
-                      <td><h5>X%</h5></td>
-                      <td><h5>XX XXX 20XX</h5></td>
-                    </tr>
-
-                    <tr>
-                      <td>
-                        <div class="row">
-                          <div class="col-md-1">
-                            <input type="radio" name="gender" value="">
-                          </div>
-                          <div class="col-md-9">
-                            <h5>User Name</h5>
-                            <h6>X minutes ago</h6>
-                          </div>
-                        </div>
-                      </td>
-                      <td><h5>X%</h5></td>
-                      <td><h5>XX XXX 20XX</h5></td>
-                    </tr>
-
-                    <tr>
-                      <td>
-                        <div class="row">
-                          <div class="col-md-1">
-                            <input type="radio" name="gender" value="">
-                          </div>
-                          <div class="col-md-9">
-                            <h5>User Name</h5>
-                            <h6>X minutes ago</h6>
-                          </div>
-                        </div>
-                      </td>
-                      <td><h5>X%</h5></td>
-                      <td><h5>XX XXX 20XX</h5></td>
-                    </tr>
-
-                    <tr>
-                      <td>
-                        <div class="row">
-                          <div class="col-md-1">
-                            <input type="radio" name="gender" value="">
-                          </div>
-                          <div class="col-md-9">
-                            <h5>User Name</h5>
-                            <h6>X minutes ago</h6>
-                          </div>
-                        </div>
-                      </td>
-                      <td><h5>X%</h5></td>
-                      <td><h5>XX XXX 20XX</h5></td>
-                    </tr>
-
-                    <tr>
-                      <td>
-                        <div class="row">
-                          <div class="col-md-1">
-                            <input type="radio" name="gender" value="">
-                          </div>
-                          <div class="col-md-9">
-                            <h5>User Name</h5>
-                            <h6>X minutes ago</h6>
-                          </div>
-                        </div>
-                      </td>
-                      <td><h5>X%</h5></td>
-                      <td><h5>XX XXX 20XX</h5></td>
-                    </tr>
-
-                    <tr>
-                      <td>
-                        <div class="row">
-                          <div class="col-md-1">
-                            <input type="radio" name="gender" value="">
-                          </div>
-                          <div class="col-md-9">
-                            <h5>User Name</h5>
-                            <h6>X minutes ago</h6>
-                          </div>
-                        </div>
-                      </td>
-                      <td><h5>X%</h5></td>
-                      <td><h5>XX XXX 20XX</h5></td>
-                    </tr>
-
-                    <tr>
-                      <td>
-                        <div class="row">
-                          <div class="col-md-1">
-                            <input type="radio" name="gender" value="">
-                          </div>
-                          <div class="col-md-9">
-                            <h5>User Name</h5>
-                            <h6>X minutes ago</h6>
-                          </div>
-                        </div>
-                      </td>
-                      <td><h5>X%</h5></td>
-                      <td><h5>XX XXX 20XX</h5></td>
-                    </tr>
-
-                    <tr>
-                      <td>
-                        <div class="row">
-                          <div class="col-md-1">
-                            <input type="radio" name="gender" value="">
-                          </div>
-                          <div class="col-md-9">
-                            <h5>User Name</h5>
-                            <h6>X minutes ago</h6>
-                          </div>
-                        </div>
-                      </td>
-                      <td><h5>X%</h5></td>
-                      <td><h5>XX XXX 20XX</h5></td>
-                    </tr>
-
-                    <tr>
-                      <td>
-                        <div class="row">
-                          <div class="col-md-1">
-                            <input type="radio" name="gender" value="">
-                          </div>
-                          <div class="col-md-9">
-                            <h5>User Name</h5>
-                            <h6>X minutes ago</h6>
-                          </div>
-                        </div>
-                      </td>
-                      <td><h5>X%</h5></td>
-                      <td><h5>XX XXX 20XX</h5></td>
-                    </tr>
-
-                    <tr>
-                      <td>
-                        <div class="row">
-                          <div class="col-md-1">
-                            <input type="radio" name="gender" value="">
-                          </div>
-                          <div class="col-md-9">
-                            <h5>User Name</h5>
-                            <h6>X minutes ago</h6>
-                          </div>
-                        </div>
-                      </td>
-                      <td><h5>X%</h5></td>
-                      <td><h5>XX XXX 20XX</h5></td>
-                    </tr>
-
-                    <tr>
-                      <td>
-                        <div class="row">
-                          <div class="col-md-1">
-                            <input type="radio" name="gender" value="">
-                          </div>
-                          <div class="col-md-9">
-                            <h5>User Name</h5>
-                            <h6>X minutes ago</h6>
-                          </div>
-                        </div>
-                      </td>
-                      <td><h5>X%</h5></td>
-                      <td><h5>XX XXX 20XX</h5></td>
-                    </tr>
-
-                  </table>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-         
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Investor MODAL END -->
 
   <main id="main">
 
   <!-- ======= section start ======= -->
-  <div class="container" style="margin-top: 130px;margin-bottom:150px;">
+  <div class="container song-detail-top-margin">
     <div class="row aos-init aos-animate" data-aos="fade-up">
       
       <div class="row">
@@ -837,7 +160,9 @@
               <img src="../assets/studio-images/Profile Pic (Square) j.png" alt="Icon" style="width: 42%;">
             </div>
             <div class="col-md-6" style="margin: 10px 0px 0px 0px;">
-              <a style="color: #fff;padding:10px 50px;" class="contact-log-btn">Upload image</a>
+              <form action="">
+                <input type="file">
+              </form>
             </div>
           </div>
 
@@ -857,21 +182,21 @@
             </div>
             <div class="col-md-9">
               <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-4">
                   <select name="" id="" aria-placeholder="Month"> 
                     <option value="">Month</option>
                     <option value="">INR</option>
                     <option value="">USD</option>
                   </select>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                   <select name="" id="" aria-placeholder="Day"> 
                     <option value="">Day</option>
                     <option value="">INR</option>
                     <option value="">USD</option>
                   </select>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                   <select name="" id="" aria-placeholder="2020"> 
                     <option value="">2020</option>
                     <option value="">INR</option>
@@ -895,8 +220,10 @@
             <div class="col-md-3">
               <p>Audio file</p>
             </div>
-            <div class="col-md-6" style="margin: 10px 0px 0px 0px;">
-              <a style="color: #fff;padding:10px 50px;" class="contact-log-btn">Choose file</a>
+            <div class="col-md-6">
+              <form action="">
+                <input type="file">
+              </form>
             </div>
           </div>
 
@@ -914,7 +241,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 song-detail-sidebar" style="margin: 20px 0px 940px 30px;">
+        <div class="col-md-4 song-detail-sidebar">
           <h4>Review</h4>
           <p>Your song will be submitted for review by our team to make sure it fulfils the terms and conditions of online stores.</p>
         </div>
@@ -930,13 +257,13 @@
           <p style="margin: 30px 0px 10px 0px;" class="txt-song-detail">What percentage of stream revenue would you like to sell?</p>
           
           <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-3">
               <input style="width: 85%;" type="text" placeholder="XX"><span style="font-size:12px;">%</span> 
             </div>
             <div class="col-md-3">
               <progress id="file" value="32" max="100"> 32% </progress>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-3">
               <p style="margin: 5px 0px;" class="dark-txt">Max. 55%</p>
             </div>
           </div>
@@ -946,7 +273,7 @@
             <div class="col-md-2">
               <input type="text" placeholder="XX">
             </div>
-            <div class="col-md-2">
+            <div class="col-md-3">
               <select name="" id="">
                 <option value="">EUR</option>
                 <option value="">INR</option>
@@ -960,21 +287,21 @@
 
           <p class="txt-song-detail">Expiry date (max 2 years)</p>
           <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-3">
               <select name="" id="" aria-placeholder="Month"> 
                 <option value="">Month</option>
                 <option value="">INR</option>
                 <option value="">USD</option>
               </select>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-3">
               <select name="" id="" aria-placeholder="Day"> 
                 <option value="">Day</option>
                 <option value="">INR</option>
                 <option value="">USD</option>
               </select>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-3">
               <select name="" id="" aria-placeholder="2020"> 
                 <option value="">2020</option>
                 <option value="">INR</option>
@@ -1038,16 +365,16 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="col-md-12 song-detail-sidebar" style="margin: 20px 0px 200px 30px;">
+        <div class="col-md-4 sidebar-styling-song-details">
+          <div class="col-md-12 song-detail-sidebar2">
             <h4>Don’t want to sell shares?</h4>
             <p>You can release your song with us without setting up a sale. You can still choose to sell shares later on.</p>
           </div>
-          <div class="col-md-12 song-detail-sidebar" style="margin: 20px 0px 245px 30px;">
+          <div class="col-md-12 song-detail-sidebar3">
             <h4>Expiry</h4>
             <p>You choose the expiry date of these shares. On this date the shares will return to you.</p>
           </div>
-          <div class="col-md-12 song-detail-sidebar" style="margin: 20px 0px 40px 30px;">
+          <div class="col-md-12 song-detail-sidebar4">
             <h4>Pictures</h4>
             <p>For best results, upload images in PNG format with a size larger than</p>
           </div>
@@ -1061,7 +388,7 @@
           <p>STEP 3</p>
           <h3>Confirmation</h3>
           <p style="margin: 10px 0px 30px 0px;">By clicking “Submit for review” you agree to the terms and conditions of StudioPop. Your can cancel at any time.</p>
-          <a style="padding: 10px 250px;margin:0px;" data-toggle="modal" data-target="#PayoutSendModal" class="confirm-button">Submit for review</a>
+          <a style="margin:0px;" data-toggle="modal" data-target="#PayoutSendModal" class="confirm-button">Submit for review</a>
         </div>
       </div>
       <!-- Third row end -->

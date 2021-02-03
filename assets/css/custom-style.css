@@ -508,6 +508,20 @@ section {
 
 /* Sections Header
 --------------------------------*/
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999999999;
+  overflow: hidden;
+  background: #ffffff;
+}
+.signle-header-logo{
+  max-width: 15%;
+  height: auto;
+  padding: 15px;
+}
 .section-header h3 {
   font-size: 36px;
   color: #413e66;
@@ -1043,6 +1057,22 @@ section {
     color: #333;
     text-shadow: 0 1px 0 #fff;
     opacity: .5;
+    cursor: pointer;
+  }
+  .modal-close-btn{
+    margin: 10px;
+    padding: 0px;
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    right: 0;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1;
+    color: #000000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    cursor: pointer;
   }
   .signup-social-box img{
     width: 20px;
@@ -1133,6 +1163,11 @@ section {
 
 /* Contact-1 Page Css Start
 --------------------------------*/
+.contact-1-margin-top{
+  margin-top: 100px;
+  margin-bottom:20px;
+  padding: 35px;
+}
 .margin-top-bottom-150{
   margin-top: 100px;
   margin-bottom:150px;
@@ -1172,6 +1207,9 @@ section {
 
 /* Payment Page Css Start
 --------------------------------*/
+.payment-modal-btn-padding{
+  padding: 10px 80px !important;
+}
 .payment-head ul{
   padding: 0px;
 }
@@ -1194,7 +1232,7 @@ section {
   font-weight: 700;
 }
 .tab-content {
-  padding: 5px;
+  padding: 30px;
 }
 .tab-content h3{
   margin: 40px 0px;
@@ -2017,13 +2055,41 @@ section {
     color: #091124;
     padding: 0px;
   }
+  .song-detail-top-margin{
+    margin-top: 130px;
+    margin-bottom:150px;
+  }
   .song-detail-sidebar{
     background: #FFFFFF 0% 0% no-repeat;
     box-shadow: 0px 4px 0px #EAEAEA;
     border: 1px solid #C9CDD1;
     border-radius: 20px;
     padding: 10px;
-    margin: 20px 0px 130px 0px;
+    margin: 20px 0px 940px 30px;
+  }
+  .song-detail-sidebar2{
+    background: #FFFFFF 0% 0% no-repeat;
+    box-shadow: 0px 4px 0px #EAEAEA;
+    border: 1px solid #C9CDD1;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px 0px 200px 30px;
+  }
+  .song-detail-sidebar3{
+    background: #FFFFFF 0% 0% no-repeat;
+    box-shadow: 0px 4px 0px #EAEAEA;
+    border: 1px solid #C9CDD1;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px 0px 245px 30px;
+  }
+  .song-detail-sidebar4{
+    background: #FFFFFF 0% 0% no-repeat;
+    box-shadow: 0px 4px 0px #EAEAEA;
+    border: 1px solid #C9CDD1;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px 0px 40px 30px;
   }
   .song-detail-sidebar h4{
     padding: 20px 10px 0px 10px;
@@ -2032,6 +2098,22 @@ section {
     font-weight: 700;
     letter-spacing: -0.26px;
     color: #091124;
+  }
+  .sidebar-styling-song-details h4 {
+    padding: 20px 10px 0px 10px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.26px;
+    color: #091124;
+  }
+  .sidebar-styling-song-details p {
+    padding: 0px 10px 0px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.26px;
+    color: #091124;
+    margin: 10px 0px;
   }
   .song-detail-sidebar p{
     padding: 0px 10px 0px 10px;
@@ -2310,6 +2392,21 @@ section {
         width: 70%;
       }
       /* song name end */
+      .payment-modal-btn-padding{
+        padding: 10px 48px !important;
+      }
+      /* song detsils page */
+      .song-detail-sidebar{
+        margin: 20px 0px 40px 30px;
+      }
+      .song-detail-top-margin{
+        margin-top: 130px;
+        margin-bottom:150px;
+        padding: 50px;
+      }
+      .song-detail-sidebar2,.song-detail-sidebar3,.song-detail-sidebar4{
+        margin: 10px 0px 10px 0px;
+      }
       /* home release page css end */
     }
   /* Ipad */
