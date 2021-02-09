@@ -161,6 +161,7 @@
           <p class="middle-sign-txt">or</p>
           <input type="email" placeholder="Email">
           <input type="password" placeholder="Password">
+          <p class="close-logInModal-open-forgat" data-toggle="modal" data-target="#forgatPassword">Forgat Passowrd</p>
           <div class="signup-button">
             <a style="color: #fff;" href="home.html">Log In</a>
           </div>
@@ -170,6 +171,66 @@
     </div>
   </div>
   <!-- Log in MODAL END -->
+
+  <!-- Forgat Password Modal Start -->
+  <div  class="modal fade" id="forgatPassword" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="signup-modal modal-content">
+        <div class="">
+          <button type="button" class="modal-close" data-dismiss="modal">&times;</button>
+          <h4 class="forgot-modal-head">Forgot Passowrd</h4>
+          <p class="forgot-modal-txt">
+            Enter the email address you used when you joined amd we'll send you 
+            instruction to reset your password.
+          </p>
+        </div>
+        <div class="modal-body">
+          <input type="email" placeholder="Enter Your Email">
+          
+          <div class="signup-button">
+            <a style="color: #fff;" href="#" class="close-forgot-password-open-change" data-toggle="modal" data-target="#changePassowrdForgot">Send Instruction</a>
+          </div>
+          <p class="footer-txt">
+            <span>Sign up with Facebook, Google or Apple</span> 
+            <br>
+            Already have an account?
+            <span class="close-forgot-password-open-login" data-toggle="modal" data-target="#logInModal">Log in</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Forgat Password Modal END -->
+
+  <!-- Change Password MODAL START style="top: 240px;"-->
+  <div  class="modal fade change-password-modal" id="changePassowrdForgot" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="signup-modal modal-content">
+        
+        <div class="modal-body">
+          <p style="text-align: center;">
+            <img style="width: 35px;height: auto;" src="../assets/studio-images/lock.png" alt="">
+          </p>
+          <h3>Change password</h3>
+          <p>New password</p>
+          <input type="password" placeholder="">
+          <p>Confirm password</p>
+          <input type="password" placeholder="">
+
+          <div class="">
+            <button style="width: 45%;" class="light-blue-btn"><a href="#">Confirm</a></button>
+            <button style="width: 45%;" data-dismiss="modal" class="white-btn cancel-button"><a href="#" >Cancel</a></button>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Change Password MODAL END -->
 
    <!-- ======= Hero Section ======= -->
   <section id="hero" class="clearfix">
@@ -425,6 +486,25 @@
       $('#logInModal').modal('show'); 
       $('#signEmailModal').modal('hide');
     });
+
+    $(".close-logInModal-open-forgat").on( "click", function() {
+      $('#forgatPassword').modal('show'); 
+      $('#logInModal').modal('hide');
+    });
+
+    $(".close-forgot-password-open-login").on( "click", function() {
+      $('#logInModal').modal('show'); 
+      $('#forgatPassword').modal('hide');
+    });
+
+    $(".close-forgot-password-open-change").on( "click", function() {
+      $('#changePassowrdForgot').modal('show'); 
+      $('#forgatPassword').modal('hide');
+    });
+
+    
+    
+    
     
     
   </script>
